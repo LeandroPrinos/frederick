@@ -3,9 +3,10 @@
 	<head>
 			<!-- Titre du site -->
 		<title>Quiz</title>
-			<!-- Lien vers la programation esthétique du site -->
-		<link rel="stylesheet" href="Médias/Accueil-SCG-Administration-Style.css">
-			<!-- Seconde partie de l'esthétique du site -->
+		<meta charset="UTF-8">
+			<!-- Lien vers la programation esthÃ©tique du site -->
+		<link rel="stylesheet" href="MÃ©dias/Accueil-SCG-Administration-Style.css">
+			<!-- Seconde partie de l'esthÃ©tique du site -->
 		<style type="text/css">
 			*{
 				cursor:crosshair;
@@ -15,23 +16,23 @@
 				font-size:15px;
 			}
 		</style>
-			<!-- Fonction pour vérifier la réponse et naviguer le quiz -->
+			<!-- Fonction pour vÃ©rifier la rÃ©ponse et naviguer le quiz -->
 		<script>
 			function valider() {
             	if (document.getElementById("1930").checked == true) {
-					alert("Bravo, c'est la bonne réponse");
+					alert("Bravo, c'est la bonne rÃ©ponse");
                 	window.open("Quiz_3.html", "_self");
                 }
                 else {
-                	alert("Ce n'est pas la bonne réponse");
+                	alert("Ce n'est pas la bonne rÃ©ponse");
                 	window.open("Quiz_1.html", "_self");
                 }
 			}
 		</script>
 	</head>
 	<body>
-			<!-- Question, choix de réponses et boutton avec fonction -->
-		<h2>Quelle est l'année de canonisation de Saint Charles Garnier?</h2>
+			<!-- Question, choix de rÃ©ponses et boutton avec fonction -->
+		<h2>Quelle est l'annÃ©e de canonisation de Saint Charles Garnier?</h2>
 		<form>
 			<input type="radio" name="Canonisation" id="1930" value="1930" checked>1930<br>
 			<input type="radio" name="Canonisation" id="1925" value="1925">1925<br>
