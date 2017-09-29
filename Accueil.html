@@ -20,9 +20,9 @@
 				filter: invert(100%);
 			}
 			@keyframes logo {
-				0%   {left:0px;}
-				50%  {left:500px;}
-				100% {left:0px;}
+				0%   {left:0px; transform: rotate(0deg)}
+				50%  {left:500px; transform: rotate(360deg)}
+				100% {left:0px; transform: rotate(720deg)}
 			}
 			img:hover {
 				transform: scale(2,1);
