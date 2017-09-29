@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+	<head>
+			<!-- Titre du site -->
+		<title>Quiz</title>
+			<!-- Lien vers la programation esthétique du site -->
+		<link rel="stylesheet" href="Médias/Accueil-SCG-Administration-Style.css">
+			<!-- Seconde partie de l'esthétique du site -->
+		<style type="text/css">
+			*{
+				cursor:crosshair;
+			}
+			button{
+				margin-left:30px;
+				font-size:15px;
+			}
+		</style>
+			<!-- Fonction pour vérifier la réponse et naviguer le quiz -->
+		<script>
+			function valider() {
+            	if (document.getElementById("Paris").checked == true) {
+					alert("Bravo, c'est la bonne réponse");
+                	window.open("Quiz_2.html", "_self");
+                }
+                else {
+                	alert("Ce n'est pas la bonne réponse");
+                	window.open("Quiz.html", "_self");
+                }
+			}
+		</script>
+	</head>
+	<body>
+			<!-- Question, choix de réponses et boutton avec fonction -->
+		<h2>Où est né Saint Charles Garnier?</h2>
+		<form>
+			<input type="radio" name="Naissance" id="Paris" value="Paris" checked>Paris<br>
+			<input type="radio" name="Naissance" id="Etharita" value="Etharita">Etharita<br>
+			<input type="radio" name="Naissance" id="Montréal" value="Montréal">Montréal<br><br>
+			<button onclick="valider()">Valider</button>
+		</form>
+	</body>
+</html>

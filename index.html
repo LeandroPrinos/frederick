@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="fr-CA">
+	<head>
+			<!-- Titre du site -->
+		<title>École Secondaire Saint-Charles-Garnier</title>
+		<meta charset="UTF-8">
+			<!-- Esthétique du site -->
+		<style type="text/css">
+			/* Bordures pour les 4 zones du site */
+			header,section,nav,footer{
+				border: 5px solid black;
+			}
+			/* Enlève bordures inutiles */
+			header,section,nav{
+				border-bottom: none;
+			}
+			/* Esthétique pour la zone décorative */
+			header{
+				height: 220px;
+				width: 1920px;
+				background: linear-gradient(to bottom, #80002a, #ffe6ee);
+				text-align: center;
+				font-size: 45px;
+			}
+			/* Esthétique pour la zone de chargement */
+			section{
+				height: 600px;
+				width: 1415px;
+				margin-left: 505px;
+			}
+			iframe{
+				background: linear-gradient(to top left, #80002a, #ffe6ee);
+				height:600px;
+				width: 1415px;
+				border:none;
+			}
+			/* Esthétique pour le menu */
+			nav{
+				float: left;
+				clear: left;
+				width: 500px;
+				height: 600px;
+				background: linear-gradient(to top right, #80002a, #ffe6ee);
+			}
+			a{
+				font-family: sans-serif;
+				color: black;
+				line-height: 250%;
+				font-size: 35px;
+				text-decoration: none;
+			}
+			a:hover{
+				background-color: #ffffff;
+			}
+			/* Esthétique pour la 4ème zone */
+			footer{
+				float: left;
+				clear: left;
+				height: 260px;
+				width: 1920px;
+				background-image: url("Médias/Logo-SCG.jpg");
+				background-repeat: repeat-x;
+				background-size: auto 255px;
+			}
+			
+				source {
+				animation: spin 1.5s linear infinite; 
+				}
+				@keyframes spin {
+				0%  {transform: rotate(90deg);}
+				50% {transform: rotate(480deg);}  
+				100% {transform: rotate(90deg);}   
+				}
+			
+		</style>
+	</head>
+	<body>
+			<!-- Texte dans la zone décorative -->
+		<header>
+			<h1>École Secondaire Saint-Charles-Garnier</h1>
+		</header>
+			<!-- Liste de liens pour le menu -->
+		<nav>
+			<ul style="margin-left:30px;list-style-type:disc;">
+				<li><a href="Accueil.html" target="iframe">Accueil</a></li>
+				<li><a href="Saint Charles Garnier.html" target="iframe">Saint Charles Garnier</a></li>
+				<li><a href="Administration.html" target="iframe">Administration</a></li>
+					<!-- Lien vers le site officiel de l'école -->
+				<li><a href="https://esscg.csdccs.edu.on.ca" target="blank_">Site officiel de l'école</a></li>
+			</ul>
+				<!-- Vidéo de bienvenue -->
+			<video height="200" style="margin-left:50px;" controls>
+			<source src="Médias/Bienvenue.mp4" type="video/mp4">
+			</video>
+		</nav>
+			<!-- Fonctionnement de la zone de chargement -->
+		<section>
+			<iframe src="Accueil.html" name="iframe"></iframe>
+		</section>
+			<!-- Emplacement de la 4ème zone -->
+		<footer>
+		</footer>
+	</body>
+</html>

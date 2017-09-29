@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="fr-CA">
+	<head>
+			<!-- Titre du site -->
+		<title>Saint Charles Garnier</title>
+		<meta charset="UTF-8">
+			<!-- Lien vers une partie de la programation esthétique du site -->
+		<link rel="stylesheet" href="Médias/Accueil-SCG-Administration-Style.css">
+			<!-- Seconde partie de l'esthétique du site -->
+		<style type="text/css">
+			/* Programation de l'image du saint Charles Garnier */
+			body{
+				background-image: url("Médias/St_Charles_Garnier.jpg");
+				background-repeat: no-repeat;
+				background-position: right top;
+				background-attachment: fixed;
+				background-size: auto 500px;
+			}
+			img{
+				margin-left:50px;
+				transform:rotate(7deg);
+				filter: drop-shadow(8px 8px 10px yellow);
+			}
+		</style>
+			<!-- Fonction pour changer la taille du texte en mettant son curseur dessus -->
+		<script>
+			function fontSize() {
+				document.getElementById("LienPDF").style.fontSize = "xx-large";
+			}
+			function fontSize2() {
+				document.getElementById("LienPDF").style.fontSize = "initial";
+			}
+		</script>
+			<!-- Image map -->
+		<map name="Cercle">
+			<area shape="circle" coords="135,100,95" href="Quiz.html" target="iframe">
+		</map>
+	</head>
+	<body>
+			<!-- Texte dans le site -->
+		<h2>Qui est Charles Garnier?</h2>
+		<p>
+			Saint Charles Garnier, né en 1606 à Paris et mort le 7 décembre 1649 à Etharita,<br>
+			est un prêtre jésuite français et missionnaire en Nouvelle-France où il est mort pour la foi.<br>
+			Il est béatifié en 1925.<br>
+			Le 29 juin 1930, il a été canonisé par le pape Pie XI avec ses sept confrères martyrs,<br>
+			qui ont été proclamés saints patrons du Canada.
+		</p>
+		<h3 style="font-size:20px;">Pour accéder à un quiz sur Saint Charles Garnier, cliquez sur son visage</h3>
+		<a id="LienPDF" href="Médias/PDF_SCG.pdf" target="iframe" style="margin-left:30px;" onmouseover="fontSize()" onmouseout="fontSize2()">Pour plus d'information sur Saint Charles Garnier, cliquez sur cette phrase.</a><br><br><br>
+			<!-- Image pour image map -->
+		<img src="Médias/St_Charles_Garnier_ImageMap.jpg" width="300px" height="300px" usemap="#Cercle">
+	</body>
+</html>

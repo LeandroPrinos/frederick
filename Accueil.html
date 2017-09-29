@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+	<head>
+			<!-- Titre du site -->
+		<title>Accueil</title>
+			<!-- Lien vers la programation esthétique du site -->
+		<link rel="stylesheet" href="Médias/Accueil-SCG-Administration-Style.css">
+			<!-- Animation et transition -->
+		<style>
+			img{
+				width:150px;
+				margin-left:50px;
+				position: relative;
+				animation-duration: 10s;
+				animation-name: logo;
+				animation-iteration-count: infinite;
+				animation-timing-function: ease-in-out;
+				transition: width 2s;
+			}
+			@keyframes logo {
+				0%   {left:0px;}
+				50%  {left:500px;}
+				100% {left:0px;}
+			}
+			img:hover {
+				transform: scale(2,1);
+			}
+		</style>
+	</head>
+	<body>
+			<!-- Texte dans le site -->
+		<h2>Bonjour,</h2>
+		<p>Bienvenue sur le site non-officiel de l'école secondaire Saint-Charles-Garnier.<br>
+			Sur le menu, à votre gauche, se trouvent des lien qui mennent à :<br>
+			Une petite biographie du saint Charles Garnier,<br>
+			Un tableau présentant les membres de l'administration de l'école<br>
+			et un lien pour se rendre sur le site officiel de l'école catholique Saint-Charles-Garnier.
+		</p>
+			<!-- Image pour animation et transition -->
+		<img src="Médias/Logo-SCG.jpg">
+	</body>
+</html>

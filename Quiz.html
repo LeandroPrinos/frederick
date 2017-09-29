@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+	<head>
+			<!-- Titre du site -->
+		<title>Quiz</title>
+			<!-- Lien vers la programation esthétique du site -->
+		<link rel="stylesheet" href="Médias/Accueil-SCG-Administration-Style.css">
+			<!-- Seconde partie de l'esthétique du site -->
+		<style type="text/css">
+			*{
+				cursor:crosshair;
+			}
+			button{
+				margin-left:30px;
+				font-size:15px;
+			}
+		</style>
+			<!-- Fonction pour commencer quiz -->
+		<script>
+			function commencer() {
+				alert("Avant de faire ce quiz, assurez-vous d'avoir lu attentivement le paragraphe sur Saint Charles Garnier");
+                window.open("Quiz_1.html", "_self");
+			}
+		</script>
+	</head>
+	<body>
+			<!-- Texte et boutton avec fonction -->
+		<h2>Bienvenue sur le quiz</h2>
+		<button onclick="commencer()">Commencer</button>
+	</body>
+</html>

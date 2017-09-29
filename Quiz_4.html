@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+	<head>
+			<!-- Titre du site -->
+		<title>Quiz</title>
+			<!-- Lien vers la programation esthétique du site -->
+		<link rel="stylesheet" href="Médias/Accueil-SCG-Administration-Style.css">
+			<!-- Seconde partie de l'esthétique du site -->
+		<style type="text/css">
+			*{
+				cursor:crosshair;
+			}
+			button{
+				margin-left:30px;
+				font-size:15px;
+			}
+		</style>
+			<!-- Fonction pour vérifier la réponse et naviguer le quiz -->
+		<script>
+			function valider() {
+            	if ("Canada" == document.getElementById("Pays").value) {
+					alert("Bravo, c'est la bonne réponse. Le quiz est maintenant terminé.");
+                	window.open("Accueil.html", "_self");
+                }
+				else if ("canada" == document.getElementById("Pays").value) {
+					alert("Bravo, c'est la bonne réponse. Le quiz est maintenant terminé.");
+                	window.open("Accueil.html", "_self");
+                }
+                else {
+                	alert("Ce n'est pas la bonne réponse");
+                	window.open("Quiz_3.html", "_self");
+                }
+			}
+		</script>
+	</head>
+	<body>
+			<!-- Question, input et boutton avec fonction -->
+		<h2>Saint Charles Garnier est saint patron de quel pays?</h2>
+		<input type="text" id="Pays" name="Pays">
+		<button onclick="valider()">Valider</button>
+	</body>
+</html>
