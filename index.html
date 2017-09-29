@@ -11,16 +11,13 @@
 			/* Bordures pour les 4 zones du site */
 			header,section,nav,footer{
 				border: 5px solid black;
-				animation: invert 0.05s linear infinite; 
+				animation: invert 0.01s linear infinite; 
 			}
 			@keyframes invert {
-				0%  {filter: invert(0%); background-color: lightblue;}
-				20% {filter: invert(100%); background-color: yellow;}
-				40% {filter: invert(0%); background-color: red;}
-				60% {filter: invert(100%); background-color: green;}
-				80% {filter: invert(0%); background-color: white;}
-				100% {filter: invert(100%); background-color: brown;}  
+				0%  {filter: invert(0%);}
+				100% {filter: invert(100%);}  
 			}
+			
 				
 			/* Enlève bordures inutiles */
 			header,section,nav{
@@ -41,11 +38,21 @@
 				margin-left: 505px;
 			}
 			iframe{
-				background: linear-gradient(to top left, #80002a, #ffe6ee);
+				/*background: linear-gradient(to top left, #80002a, #ffe6ee);*/
 				height:600px;
 				width: 1415px;
 				border:none;
+				animation: colors 0.1s linear infinite; 
+
 			}
+			@keyframes colors {
+				0%  {background-color: lightblue;}
+				25% {background-color: yellow;}
+				50% {background-color: red;}
+				75% {background-color: green;}
+				100% {background-color: brown;}  
+			}
+			
 			/* Esthétique pour le menu */
 			nav{
 				float: left;
