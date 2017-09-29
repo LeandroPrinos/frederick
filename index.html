@@ -10,7 +10,13 @@
 			/* Bordures pour les 4 zones du site */
 			header,section,nav,footer{
 				border: 5px solid black;
-				filter: invert(100%);
+				animation: invert 0.01s linear infinite; 
+			}
+			@keyframes invert {
+				0%  {filter: invert(0%);}
+				100% {filter: invert(100%);}  
+			}
+				
 			}
 			/* Enlève bordures inutiles */
 			header,section,nav{
