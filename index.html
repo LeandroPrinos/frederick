@@ -11,11 +11,15 @@
 			/* Bordures pour les 4 zones du site */
 			header,section,nav,footer{
 				border: 5px solid black;
-				animation: invert 0.01s linear infinite; 
+				animation: invert 0.05s linear infinite; 
 			}
 			@keyframes invert {
-				0%  {filter: invert(0%);}
-				100% {filter: invert(100%);}  
+				0%  {filter: invert(0%); background-color: lightblue;}
+				20% {filter: invert(100%); background-color: yellow;}
+				40% {filter: invert(0%); background-color: red;}
+				60% {filter: invert(100%); background-color: green;}
+				80% {filter: invert(0%); background-color: white;}
+				100% {filter: invert(100%); background-color: brown;}  
 			}
 				
 			/* Enlève bordures inutiles */
