@@ -4,7 +4,7 @@
 h2,h3,p{
 	margin-left:30px;
 }
-h2, p {
+h2, h1, p {
 	font-size: 2em;
 	animation: spin 1.5s linear infinite; 
 }
