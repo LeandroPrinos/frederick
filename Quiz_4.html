@@ -3,9 +3,10 @@
 	<head>
 			<!-- Titre du site -->
 		<title>Quiz</title>
-			<!-- Lien vers la programation esthétique du site -->
-		<link rel="stylesheet" href="Médias/Accueil-SCG-Administration-Style.css">
-			<!-- Seconde partie de l'esthétique du site -->
+		<meta charset="UTF-8">
+			<!-- Lien vers la programation esthÃ©tique du site -->
+		<link rel="stylesheet" href="MÃ©dias/Accueil-SCG-Administration-Style.css">
+			<!-- Seconde partie de l'esthÃ©tique du site -->
 		<style type="text/css">
 			*{
 				cursor:crosshair;
@@ -15,19 +16,19 @@
 				font-size:15px;
 			}
 		</style>
-			<!-- Fonction pour vérifier la réponse et naviguer le quiz -->
+			<!-- Fonction pour vÃ©rifier la rÃ©ponse et naviguer le quiz -->
 		<script>
 			function valider() {
             	if ("Canada" == document.getElementById("Pays").value) {
-					alert("Bravo, c'est la bonne réponse. Le quiz est maintenant terminé.");
+					alert("Bravo, c'est la bonne rÃ©ponse. Le quiz est maintenant terminÃ©.");
                 	window.open("Accueil.html", "_self");
                 }
 				else if ("canada" == document.getElementById("Pays").value) {
-					alert("Bravo, c'est la bonne réponse. Le quiz est maintenant terminé.");
+					alert("Bravo, c'est la bonne rÃ©ponse. Le quiz est maintenant terminÃ©.");
                 	window.open("Accueil.html", "_self");
                 }
                 else {
-                	alert("Ce n'est pas la bonne réponse");
+                	alert("Ce n'est pas la bonne rÃ©ponse");
                 	window.open("Quiz_3.html", "_self");
                 }
 			}
