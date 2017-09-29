@@ -1,9 +1,6 @@
 /* Partie de l'esthétique pour la page d'accueil, 
 	celle du saint Charles Garnier et celle de l'administration 
 */
-html {
-	cursor:url('Médias/phalliccursor.ani'), default;
-}
 
 h2,h3,p{
 	margin-left:30px;
