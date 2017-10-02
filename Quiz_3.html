@@ -3,9 +3,10 @@
 	<head>
 			<!-- Titre du site -->
 		<title>Quiz</title>
-			<!-- Lien vers la programation esthétique du site -->
-		<link rel="stylesheet" href="Médias/Accueil-SCG-Administration-Style.css">
-			<!-- Seconde partie de l'esthétique du site -->
+		<meta charset="UTF-8">
+			<!-- Lien vers la programation esthÃ©tique du site -->
+		<link rel="stylesheet" href="MÃ©dias/Accueil-SCG-Administration-Style.css">
+			<!-- Seconde partie de l'esthÃ©tique du site -->
 		<style type="text/css">
 			*{
 				cursor:crosshair;
@@ -15,16 +16,16 @@
 				font-size:15px;
 			}
 		</style>
-			<!-- Fonction pour vérifier la réponse et naviguer le quiz -->
+			<!-- Fonction pour vÃ©rifier la rÃ©ponse et naviguer le quiz -->
 		<script>
 			function valider() {
-				var réponse = 1649-1606
-            	if (réponse == document.getElementById("âge").value) {
-					alert("Bravo, c'est la bonne réponse");
+				var rÃ©ponse = 1649-1606
+            	if (rÃ©ponse == document.getElementById("Ã¢ge").value) {
+					alert("Bravo, c'est la bonne rÃ©ponse");
                 	window.open("Quiz_4.html", "_self");
                 }
                 else {
-                	alert("Ce n'est pas la bonne réponse");
+                	alert("Ce n'est pas la bonne rÃ©ponse");
                 	window.open("Quiz_2.html", "_self");
                 }
 			}
@@ -32,8 +33,8 @@
 	</head>
 	<body>
 			<!-- Question, input et boutton avec fonction -->
-		<h2>Si Saint Charles Garnier est né en 1606 et est mort en 1649, il a vécu combien d'années?</h2>
-		<input type="number" id="âge" name="âge">
+		<h2>Si Saint Charles Garnier est nÃ© en 1606 et est mort en 1649, il a vÃ©cu combien d'annÃ©es?</h2>
+		<input type="number" id="Ã¢ge" name="Ã¢ge">
 		<button onclick="valider()">Valider</button>
 	</body>
 </html>
