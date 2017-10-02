@@ -49,12 +49,13 @@
 				animation: colors 0.1s linear infinite; 
 			}
 			@keyframes colors {
-				0%  {background-color: lightblue;}
-				25% {background-color: yellow;}
-				50% {background-color: red;}
-				75% {background-color: green;}
-				100% {background-color: brown;}  
+				0%  {background-color: lightblue; transform: translate(0px,0px);}
+				25% {background-color: yellow; transform: translate(50px,50px);}
+				50% {background-color: red; transform: translate(100px,100px);}
+				75% {background-color: green; transform: translate(150px,150px);}
+				100% {background-color: brown; transform: translate(200px,200px);}  
 			}
+			
 			
 			/* Esthétique pour le menu */
 			nav{
